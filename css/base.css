@@ -1,0 +1,98 @@
+/* ===========================
+   base.css — Typography & Body
+   =========================== */
+body {
+  font-family: var(--font-main);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text);
+  background-color: var(--background);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; font-weight: 600; }
+h4 { font-size: 16px; font-weight: 600; }
+
+p {
+  color: var(--text);
+  line-height: 1.7;
+}
+
+small {
+  font-size: 13px;
+}
+
+a {
+  color: var(--primary);
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+strong { font-weight: 600; }
+
+/* Skip to main content (a11y) */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary);
+  color: #fff;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: 0 0 var(--radius-sm) 0;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 9999;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-title a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+/* Star rating */
+.stars {
+  color: var(--secondary);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.rating-text {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-left: var(--space-xs);
+}

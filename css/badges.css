@@ -1,0 +1,83 @@
+/* ===============================
+   badges.css — Status Badges
+   =============================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+}
+
+.badge--success {
+  background-color: #DCFCE7;
+  color: #15803D;
+}
+
+.badge--warning {
+  background-color: #FEF3C7;
+  color: #B45309;
+}
+
+.badge--danger {
+  background-color: #FEE2E2;
+  color: #B91C1C;
+}
+
+.badge--info {
+  background-color: #DBEAFE;
+  color: #1D4ED8;
+}
+
+.badge--secondary {
+  background-color: #F3F4F6;
+  color: #374151;
+}
+
+.badge--accent {
+  background-color: #FCE7F3;
+  color: #BE185D;
+}
+
+.badge--primary {
+  background-color: #EFF6FF;
+  color: var(--primary);
+}
+
+/* Discount badge on product card */
+.badge--discount {
+  background-color: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 8px;
+}
+
+/* Dot indicator */
+.badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  display: none;
+}
+
+.badge--dot::before {
+  display: block;
+}
+
+/* Role badge */
+.badge--role {
+  background-color: var(--surface-alt);
+  color: var(--text-muted);
+  font-size: 11px;
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
